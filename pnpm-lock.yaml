@@ -678,6 +678,12 @@ importers:
   packages/playground/tsconfig-json-load-error:
     specifiers: {}
 
+  packages/playground/vanilla:
+    specifiers:
+      vite: workspace:*
+    devDependencies:
+      vite: link:../../vite
+
   packages/playground/vue:
     specifiers:
       '@vitejs/plugin-vue': workspace:*
@@ -810,6 +816,12 @@ importers:
       '@rollup/pluginutils': 4.2.1
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.17.9
       hash-sum: 2.0.0
+
+  packages/temp:
+    specifiers:
+      css-color-names: ^1.0.1
+    devDependencies:
+      css-color-names: 1.0.1
 
   packages/vite:
     specifiers:
@@ -5629,7 +5641,7 @@ packages:
     dev: true
 
   /image-size/0.5.5:
-    resolution: {integrity: sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=}
+    resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     requiresBuild: true
